@@ -1,0 +1,60 @@
+{
+	"folders":
+	[
+		{
+			"name": "Ghost-Blank",
+			"path": "./",
+			"file_exclude_patterns": ["*.sublime-project", "*.sublime-workspace",]
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4
+	},
+
+	"build_systems":
+	[
+		{
+			"name" : "Gulp Handlebars",
+			"selector": "text.html.handlebars",
+			"cmd": [ "gulp" ],
+			"working_dir": "${project_path}",
+
+			"variants":
+			[
+				{
+					"name": "Preview in ghost",
+					"cmd": [ "gulp",  "livereload" ]
+				}
+			]
+		},
+		{
+			"name" : "Gulp SCSS",
+			"selector": "styles.scss",
+			"cmd": [ "gulp" ],
+			"working_dir": "${project_path}",
+
+			"variants":
+			[
+				{
+					"name": "Preview in ghost",
+					"cmd": [ "gulp",  "livereload" ]
+				}
+			]
+		},
+		{
+			"name" : "Gulp Javascript",
+			"selector": "source.js",
+			"cmd": [ "gulp" ],
+			"working_dir": "${project_path}",
+
+			"variants":
+			[
+				{
+					"name": "Preview in ghost",
+					"cmd": [ "gulp",  "livereload" ]
+				}
+			]
+		}
+	]
+}
