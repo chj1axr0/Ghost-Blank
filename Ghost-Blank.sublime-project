@@ -3,8 +3,7 @@
 	[
 		{
 			"name": "Ghost-Blank",
-			"path": "./",
-			"file_exclude_patterns": ["*.sublime-project", "*.sublime-workspace",]
+			"path": "./"
 		}
 	],
 	"settings":
